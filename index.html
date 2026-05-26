@@ -25,7 +25,7 @@
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; overflow-x: hidden; }
   section[id] { scroll-margin-top: 60px; }
   body {
     font-family: 'Manrope', -apple-system, sans-serif;
@@ -347,9 +347,7 @@
   .hours {
     padding: 4rem 0;
     background: linear-gradient(180deg, var(--paper) 0%, var(--ivory-warm) 100%);
-    margin: 0 -100vw;
-    padding-left: 100vw;
-    padding-right: 100vw;
+    position: relative;
   }
   .hours-inner {
     max-width: 1240px;
@@ -525,9 +523,6 @@
     padding: 3rem 0 1.5rem;
     background: var(--aubergine);
     color: var(--ivory-warm);
-    margin: 0 -100vw;
-    padding-left: 100vw;
-    padding-right: 100vw;
     position: relative;
     overflow: hidden;
   }
